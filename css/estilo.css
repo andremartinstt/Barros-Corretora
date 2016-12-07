@@ -2,7 +2,7 @@
 
 *{
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 header#cabecalho{
@@ -28,6 +28,9 @@ nav#menu ul li{
 }*/
 #li-right{
 	margin-left: 150px;
+}
+div#sub-menu figure#photo-main img{
+	width: 100%;
 }
 div#sub-menu figure#photo-main figcaption{
 	position: absolute;
