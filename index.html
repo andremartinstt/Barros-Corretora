@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Barros Corretora</title>
+		
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.modal.css">
 	</head>
 	<body>
 		<div id="topo">
@@ -30,12 +32,113 @@
 				</nav>
 			</header>
 		</div>
+
 		<div id="sub-menu">
 			<figure id="photo-main">
 				<img src="images/img.png" alt="Imagem Principal">
 				<figcaption><h1>barros corretora</h1><h4>contato@barroscorretora.com.br (31) 2535-1515</h4></figcaption>
 			</figure>
 		</div>
+
+		<div class="content">
+			<section class="destaques-venda">
+				<h2>Destaques Venda</h2>
+				<div style="display:none" id="modal">					
+					<h3>Fale Conosco</h3>
+					<h5>Entre em contato, estamos a disposição para atendê-los</h5>
+					<form action="#">
+						<p class="formulario">
+							<label for="nome">Nome: </label>
+							<input type="text" class="campo">
+						</p>
+						<p class="formulario">
+							<label for="email">E-mail: </label>
+							<input type="email" class="campo">
+						</p>
+						<p class="formulario">
+							<label for="telefone">Telefone: </label>
+							<input type="text" class="campo">
+						</p>
+						<p class="formulario">
+							<label for="mensagem">Mensagem: </label>
+							<textarea name="msg" class="campo"></textarea>
+						</p>
+						<p class="formulario">
+							<label for=""></label>
+							<input type="submit" value="Enviar Mensagem" class="botao">
+						</p>
+					</form>
+				</div>
+				<div id="venda-esquerda">
+					<ul>
+						<li>
+							<img src="images/destaque1.jpg" class="contato">
+						</li>
+						<li>
+							<div id="teste">
+							<p>Castelo Casa</p>
+							<p>Germinada</p>
+							<p><table class="tabela"><tr><td>250 m²</td><td>2 banho(s)</td></tr></table></p>
+							<p><table class="tabela"><tr><td>2 quarto(s)</td><td>2 vaga(s)</td></tr></table></p>
+							<p class="preco">R$ 10.000.000,00</p>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<img src="images/destaque1.jpg" class="contato">
+						</li>
+						<li>
+							<p>Castelo Casa</p>
+							<p>Germinada</p>
+							<p><table class="tabela"><tr><td>250 m²</td><td>2 banho(s)</td></tr></table></p>
+							<p><table class="tabela"><tr><td>2 quarto(s)</td><td>2 vaga(s)</td></tr></table></p>
+							<p class="preco">R$ 10.000.000,00</p>
+						</li>
+					</ul>
+				</div>
+				<div id="venda-direita">
+					<ul>
+						<li>
+							<figure>
+								<img src="images/destaque2.jpg" class="contato">
+								<figcaption></figcaption>
+							</figure>
+						</li>
+						<li>
+							<p>Castelo Casa</p>
+							<p>Germinada</p>
+							<p><table class="tabela"><tr><td>250 m²</td><td>2 banho(s)</td></tr></table></p>
+							<p><table class="tabela"><tr><td>2 quarto(s)</td><td>2 vaga(s)</td></tr></table></p>
+							<p class="preco">R$ 10.000.000,00</p>
+						</li>
+					</ul>
+					<ul>	
+						<li>
+							<figure>
+								<img src="images/destaque2.jpg" class="contato">
+								<figcaption></figcaption>
+							</figure>
+						</li>
+						<li>
+							<p>Castelo Casa</p>
+							<p>Germinada</p>
+							<p><table class="tabela"><tr><td>250 m²</td><td>2 banho(s)</td></tr></table></p>
+							<p><table class="tabela"><tr><td>2 quarto(s)</td><td>2 vaga(s)</td></tr></table></p>
+							<p class="preco">R$ 10.000.000,00</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
 		<footer><p>Footer Page</p></footer>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jquery.modal.min.js"></script>
+		<script>
+			$('.contato').click(function(){
+				$('#modal').modal();
+			});
+		</script>
 	</body>
 </html>

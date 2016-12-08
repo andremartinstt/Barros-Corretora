@@ -4,7 +4,12 @@
 	margin: 0;
 	padding: 0;	
 }
-
+ul{
+	list-style: none;
+}
+ul li{
+display: inline-block;
+}
 header#cabecalho{
 	background-color: #A52A2A;
 }
@@ -12,20 +17,15 @@ nav#menu{
 	display: block;
 }
 nav#menu ul{
-	list-style: none;
 	margin-left: 150px;
 }
 nav#menu ul li{
-	display: inline-block;
 	color: #fff;
 	padding: 5px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 9pt;
 	cursor: pointer;
 }
-/*nav#menu ul li#sub-li{
-	
-}*/
 #li-right{
 	margin-left: 150px;
 }
@@ -52,12 +52,85 @@ div#sub-menu figure#photo-main figcaption h4{
 	margin-left: 650px;
 	margin-top: -35px;
 }
+.content{
+	margin-top: 60px;
+}
+.destaques-venda{
+	height: 600px;
+}
+.destaques-venda img{
+	width: 240px;
+	height: 180px;
+}
+div#venda-direita{
+	float: right;
+	margin-right: 160px;
+}
+div#venda-esquerda{
+	float: left;
+	margin-left: 220px;
+}
+.tabela td{
+	padding-right: 50px;
+}
+.content h2{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #A52A2A;
+	margin-left: 500px;
+	margin-bottom: 40px;
+}
+.content p{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 2px;
+}
+.content p.preco{
+	color: red;
+}
+#modal h3, h5, label{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#modal h3{
+	color: #fff;
+	padding: 5px;
+	padding-left: 20px;
+	background-color: #A52A2A;
+}
+.formulario{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.formulario label {
+	margin-bottom: 5px;
+	font-size: 16px;
+	display: block;
+}
+.formulario .botao{
+	background-color: #A52A2A;
+	color: #fff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-transform: none;
+	cursor: pointer;
+	padding: 10px 30px;
+	border: 1px solid #A52A2A;
+	border-radius: 25px 25px 25px 25px;
+	margin-left: 130px;
+}
+.campo {
+	display: block;
+	width: 80%;
+	padding: 5px 8px;
+	line-height: 10px;
+	border: 1px solid #ddd;
+	font-family: 'Arial', sans-serif;
+	background: #fff;
+	font-size: 14px;
+}
 footer{
 	background-color: rgba(0,0,0, .8);
 	color: #fff;
 	width: 100%;
 	height: 90px;
-	position: absolute;
 	bottom: 0;
 	clear: both;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
